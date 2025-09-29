@@ -6,6 +6,7 @@
 venv*/
 envs/
 slurm_logs/
+mineru_out/
 
 sync1.sh
 data_preprocess_pj1
