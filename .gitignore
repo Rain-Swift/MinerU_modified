@@ -1,12 +1,13 @@
 *.tar
 *.tar.gz
 *.zip
-*.json
 *.pdf
 venv*/
 envs/
 slurm_logs/
 mineru_out/
+mineru_in/
+
 
 sync1.sh
 data_preprocess_pj1
