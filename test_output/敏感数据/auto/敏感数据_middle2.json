@@ -1,0 +1,2031 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "type": "text",
+                    "bbox": [
+                        97,
+                        262,
+                        763,
+                        1157
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                131,
+                                299,
+                                217,
+                                330
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        131,
+                                        299,
+                                        217,
+                                        330
+                                    ],
+                                    "score": 0.996,
+                                    "content": "原始数据：",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0
+                        },
+                        {
+                            "bbox": [
+                                134,
+                                356,
+                                543,
+                                383
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        134,
+                                        356,
+                                        543,
+                                        383
+                                    ],
+                                    "score": 0.999,
+                                    "content": "440105199203156789 (虚拟广州天河区出生日期)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1
+                        },
+                        {
+                            "bbox": [
+                                131,
+                                409,
+                                630,
+                                439
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        131,
+                                        409,
+                                        630,
+                                        439
+                                    ],
+                                    "score": 0.973,
+                                    "content": "31010419871123456X (虚拟上海徐汇区出生日期，尾号为X)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2
+                        },
+                        {
+                            "bbox": [
+                                133,
+                                467,
+                                538,
+                                496
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        133,
+                                        467,
+                                        538,
+                                        496
+                                    ],
+                                    "score": 0.991,
+                                    "content": "110101200506089012 (虚拟北京东城区出生日期)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3
+                        },
+                        {
+                            "bbox": [
+                                134,
+                                525,
+                                367,
+                                552
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        134,
+                                        525,
+                                        367,
+                                        552
+                                    ],
+                                    "score": 0.99,
+                                    "content": "混淆数据（适配检测场景）：",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        },
+                        {
+                            "bbox": [
+                                133,
+                                578,
+                                468,
+                                608
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        133,
+                                        578,
+                                        468,
+                                        608
+                                    ],
+                                    "score": 0.997,
+                                    "content": "44-0105-199203-156789 (插入短横线)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5
+                        },
+                        {
+                            "bbox": [
+                                131,
+                                634,
+                                654,
+                                664
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        131,
+                                        634,
+                                        547,
+                                        663
+                                    ],
+                                    "score": 0.953,
+                                    "content": "310104壹玖捌柒壹壹贰叁肆伍陆×(数字转汉字",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        548,
+                                        641,
+                                        566,
+                                        660
+                                    ],
+                                    "score": 0.73,
+                                    "content": "^ +",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        567,
+                                        634,
+                                        654,
+                                        664
+                                    ],
+                                    "score": 0.981,
+                                    "content": "特殊符号)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6
+                        },
+                        {
+                            "bbox": [
+                                134,
+                                689,
+                                515,
+                                719
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        134,
+                                        689,
+                                        515,
+                                        719
+                                    ],
+                                    "score": 0.988,
+                                    "content": "11@01#012005$06%08&9012 (插入特殊字符)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7
+                        },
+                        {
+                            "bbox": [
+                                132,
+                                767,
+                                339,
+                                801
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        132,
+                                        767,
+                                        339,
+                                        801
+                                    ],
+                                    "score": 0.995,
+                                    "content": "2.手机号／联系方式",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8
+                        },
+                        {
+                            "bbox": [
+                                130,
+                                826,
+                                222,
+                                865
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        130,
+                                        826,
+                                        222,
+                                        865
+                                    ],
+                                    "score": 0.997,
+                                    "content": "原始数据：",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9
+                        },
+                        {
+                            "bbox": [
+                                136,
+                                887,
+                                380,
+                                914
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        136,
+                                        887,
+                                        380,
+                                        914
+                                    ],
+                                    "score": 0.997,
+                                    "content": "13812345678 (虚拟移动号段)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10
+                        },
+                        {
+                            "bbox": [
+                                135,
+                                943,
+                                380,
+                                969
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        135,
+                                        943,
+                                        380,
+                                        969
+                                    ],
+                                    "score": 0.973,
+                                    "content": "18678901234 (虚拟联通号段)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11
+                        },
+                        {
+                            "bbox": [
+                                135,
+                                997,
+                                383,
+                                1026
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        135,
+                                        997,
+                                        383,
+                                        1026
+                                    ],
+                                    "score": 0.963,
+                                    "content": "13965432109 (虚拟电信号段)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 12
+                        },
+                        {
+                            "bbox": [
+                                134,
+                                1055,
+                                429,
+                                1082
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        134,
+                                        1055,
+                                        429,
+                                        1082
+                                    ],
+                                    "score": 0.998,
+                                    "content": "021-58887777 (虚拟上海固定电话)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 13
+                        },
+                        {
+                            "bbox": [
+                                129,
+                                1107,
+                                222,
+                                1143
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        129,
+                                        1107,
+                                        222,
+                                        1143
+                                    ],
+                                    "score": 0.991,
+                                    "content": "混淆数据：",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 14
+                        }
+                    ],
+                    "index": 7
+                }
+            ],
+            "page_idx": 0,
+            "page_size": [
+                892,
+                1261
+            ],
+            "discarded_blocks": [],
+            "para_blocks": [
+                {
+                    "type": "list",
+                    "bbox": [
+                        97,
+                        262,
+                        763,
+                        1157
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                131,
+                                299,
+                                217,
+                                330
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        131,
+                                        299,
+                                        217,
+                                        330
+                                    ],
+                                    "score": 0.996,
+                                    "content": "原始数据：",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 0,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                134,
+                                356,
+                                543,
+                                383
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        134,
+                                        356,
+                                        543,
+                                        383
+                                    ],
+                                    "score": 0.999,
+                                    "content": "440105199203156789 (虚拟广州天河区出生日期)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 1,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                131,
+                                409,
+                                630,
+                                439
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        131,
+                                        409,
+                                        630,
+                                        439
+                                    ],
+                                    "score": 0.973,
+                                    "content": "31010419871123456X (虚拟上海徐汇区出生日期，尾号为X)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 2,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                133,
+                                467,
+                                538,
+                                496
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        133,
+                                        467,
+                                        538,
+                                        496
+                                    ],
+                                    "score": 0.991,
+                                    "content": "110101200506089012 (虚拟北京东城区出生日期)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 3,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                134,
+                                525,
+                                367,
+                                552
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        134,
+                                        525,
+                                        367,
+                                        552
+                                    ],
+                                    "score": 0.99,
+                                    "content": "混淆数据（适配检测场景）：",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                133,
+                                578,
+                                468,
+                                608
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        133,
+                                        578,
+                                        468,
+                                        608
+                                    ],
+                                    "score": 0.997,
+                                    "content": "44-0105-199203-156789 (插入短横线)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 5,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                131,
+                                634,
+                                654,
+                                664
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        131,
+                                        634,
+                                        547,
+                                        663
+                                    ],
+                                    "score": 0.953,
+                                    "content": "310104壹玖捌柒壹壹贰叁肆伍陆×(数字转汉字",
+                                    "type": "text"
+                                },
+                                {
+                                    "bbox": [
+                                        548,
+                                        641,
+                                        566,
+                                        660
+                                    ],
+                                    "score": 0.73,
+                                    "content": "^ +",
+                                    "type": "inline_equation"
+                                },
+                                {
+                                    "bbox": [
+                                        567,
+                                        634,
+                                        654,
+                                        664
+                                    ],
+                                    "score": 0.981,
+                                    "content": "特殊符号)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 6,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                134,
+                                689,
+                                515,
+                                719
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        134,
+                                        689,
+                                        515,
+                                        719
+                                    ],
+                                    "score": 0.988,
+                                    "content": "11@01#012005$06%08&9012 (插入特殊字符)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 7,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                132,
+                                767,
+                                339,
+                                801
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        132,
+                                        767,
+                                        339,
+                                        801
+                                    ],
+                                    "score": 0.995,
+                                    "content": "2.手机号／联系方式",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 8,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                130,
+                                826,
+                                222,
+                                865
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        130,
+                                        826,
+                                        222,
+                                        865
+                                    ],
+                                    "score": 0.997,
+                                    "content": "原始数据：",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 9,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                136,
+                                887,
+                                380,
+                                914
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        136,
+                                        887,
+                                        380,
+                                        914
+                                    ],
+                                    "score": 0.997,
+                                    "content": "13812345678 (虚拟移动号段)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 10,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                135,
+                                943,
+                                380,
+                                969
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        135,
+                                        943,
+                                        380,
+                                        969
+                                    ],
+                                    "score": 0.973,
+                                    "content": "18678901234 (虚拟联通号段)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 11,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                135,
+                                997,
+                                383,
+                                1026
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        135,
+                                        997,
+                                        383,
+                                        1026
+                                    ],
+                                    "score": 0.963,
+                                    "content": "13965432109 (虚拟电信号段)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 12,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                134,
+                                1055,
+                                429,
+                                1082
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        134,
+                                        1055,
+                                        429,
+                                        1082
+                                    ],
+                                    "score": 0.998,
+                                    "content": "021-58887777 (虚拟上海固定电话)",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 13,
+                            "is_list_start_line": true
+                        },
+                        {
+                            "bbox": [
+                                129,
+                                1107,
+                                222,
+                                1143
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        129,
+                                        1107,
+                                        222,
+                                        1143
+                                    ],
+                                    "score": 0.991,
+                                    "content": "混淆数据：",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 14,
+                            "is_list_start_line": true
+                        }
+                    ],
+                    "index": 7,
+                    "page_num": 0,
+                    "page_size": [
+                        892,
+                        1261
+                    ],
+                    "bbox_fs": [
+                        129,
+                        299,
+                        654,
+                        1143
+                    ]
+                }
+            ]
+        },
+        {
+            "preproc_blocks": [
+                {
+                    "type": "table",
+                    "bbox": [
+                        130,
+                        353,
+                        762,
+                        402
+                    ],
+                    "blocks": [
+                        {
+                            "type": "table_body",
+                            "bbox": [
+                                130,
+                                353,
+                                762,
+                                402
+                            ],
+                            "group_id": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        130,
+                                        353,
+                                        762,
+                                        402
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                130,
+                                                353,
+                                                762,
+                                                402
+                                            ],
+                                            "score": 0.155,
+                                            "html": "<html><body><table><tr><td>3.个人基础信息</td></tr></table></body></html>",
+                                            "type": "table",
+                                            "image_path": "83757c644309df15d2ee2329366ec9b7fd6ebaa335799da08f69fb1cedcdb64b.jpg",
+                                            "ocr_bbox": [
+                                                130,
+                                                353,
+                                                762,
+                                                402
+                                            ],
+                                            "table_bbox": [
+                                                130,
+                                                353,
+                                                762,
+                                                402
+                                            ],
+                                            "table_texts": [
+                                                {
+                                                    "text": "3.个人基础信息",
+                                                    "bbox": [
+                                                        3.0,
+                                                        17.0,
+                                                        321.0,
+                                                        88.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            3.0,
+                                                            17.0
+                                                        ],
+                                                        [
+                                                            321.0,
+                                                            17.0
+                                                        ],
+                                                        [
+                                                            321.0,
+                                                            88.0
+                                                        ],
+                                                        [
+                                                            3.0,
+                                                            88.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9971476197242737,
+                                                    "ocr_hw": [
+                                                        100,
+                                                        1283
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "virtual_lines": [
+                                {
+                                    "bbox": [
+                                        130,
+                                        353,
+                                        762,
+                                        402
+                                    ],
+                                    "spans": [],
+                                    "index": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        103,
+                        406,
+                        776,
+                        1042
+                    ],
+                    "blocks": [
+                        {
+                            "type": "table_body",
+                            "bbox": [
+                                103,
+                                406,
+                                776,
+                                1042
+                            ],
+                            "group_id": 1,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        103,
+                                        406,
+                                        776,
+                                        1042
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                103,
+                                                406,
+                                                776,
+                                                1042
+                                            ],
+                                            "score": 0.516,
+                                            "html": "<html><body><table><tr><td></td><td></td></tr><tr><td></td><td>原始数据（姓名+地址+证件关联）：</td></tr><tr><td></td><td>姓名：张三，地址：广东省深圳市南山区科技园路 88号，电子邮箱：</td></tr><tr><td></td><td></td></tr><tr><td></td><td>zhangsan123@test.c0m，身份证号：440305199508201234</td></tr><tr><td></td><td>姓名：李娜，地址：浙江省杭州市西湖区天目山路 55号，电子邮箱：</td></tr><tr><td></td><td>lina456@test.cn，身份证号：330106199005126789</td></tr><tr><td></td><td></td></tr><tr><td></td><td>姓名：王磊,地址:北京市朝阳区建国路99 号，电子邮箱:wanglei789@test.net</td></tr><tr><td></td><td>身份证号：110105198511034567</td></tr><tr><td></td><td></td></tr><tr><td></td><td>混淆数据:</td></tr><tr><td></td><td>姓名：张_三，地址：广东省－ 深圳市－南山区科技园路 88 号，邮箱:</td></tr><tr><td></td><td></td></tr><tr><td></td><td>zhang#san123@test.com</td></tr><tr><td></td><td></td></tr><tr><td></td><td>姓名：李O娜,地址：浙江省杭州市西湖区天目山路伍伍号，邮箱:lina456@test.</td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td>cn (空格干扰)</td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr></table></body></html>",
+                                            "type": "table",
+                                            "image_path": "75787128684d8af8ef1fe8c41518920d7cdd3f676611bdbf598030fd79c57e25.jpg",
+                                            "ocr_bbox": [
+                                                103,
+                                                406,
+                                                776,
+                                                1042
+                                            ],
+                                            "table_bbox": [
+                                                103,
+                                                406,
+                                                776,
+                                                1042
+                                            ],
+                                            "table_texts": [
+                                                {
+                                                    "text": "原始数据（姓名+地址+证件关联）：",
+                                                    "bbox": [
+                                                        61.0,
+                                                        39.0,
+                                                        719.0,
+                                                        86.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            61.0,
+                                                            39.0
+                                                        ],
+                                                        [
+                                                            719.0,
+                                                            39.0
+                                                        ],
+                                                        [
+                                                            719.0,
+                                                            86.0
+                                                        ],
+                                                        [
+                                                            61.0,
+                                                            86.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9788327813148499,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "姓名：张三，地址：广东省深圳市南山区科技园路 88号，电子邮箱：",
+                                                    "bbox": [
+                                                        53.0,
+                                                        147.0,
+                                                        1313.0,
+                                                        206.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            53.0,
+                                                            147.0
+                                                        ],
+                                                        [
+                                                            1313.0,
+                                                            147.0
+                                                        ],
+                                                        [
+                                                            1313.0,
+                                                            206.0
+                                                        ],
+                                                        [
+                                                            53.0,
+                                                            206.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9877396821975708,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "zhangsan123@test.c0m，身份证号：440305199508201234",
+                                                    "bbox": [
+                                                        58.0,
+                                                        249.0,
+                                                        1064.0,
+                                                        298.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            58.0,
+                                                            249.0
+                                                        ],
+                                                        [
+                                                            1064.0,
+                                                            249.0
+                                                        ],
+                                                        [
+                                                            1064.0,
+                                                            298.0
+                                                        ],
+                                                        [
+                                                            58.0,
+                                                            298.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.985237717628479,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "姓名：李娜，地址：浙江省杭州市西湖区天目山路 55号，电子邮箱：",
+                                                    "bbox": [
+                                                        57.0,
+                                                        360.0,
+                                                        1313.0,
+                                                        413.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            57.0,
+                                                            360.0
+                                                        ],
+                                                        [
+                                                            1313.0,
+                                                            360.0
+                                                        ],
+                                                        [
+                                                            1313.0,
+                                                            413.0
+                                                        ],
+                                                        [
+                                                            57.0,
+                                                            413.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9868979454040527,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "lina456@test.cn，身份证号：330106199005126789",
+                                                    "bbox": [
+                                                        63.0,
+                                                        456.0,
+                                                        926.0,
+                                                        507.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            63.0,
+                                                            456.0
+                                                        ],
+                                                        [
+                                                            926.0,
+                                                            456.0
+                                                        ],
+                                                        [
+                                                            926.0,
+                                                            507.0
+                                                        ],
+                                                        [
+                                                            63.0,
+                                                            507.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9875913858413696,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "姓名：王磊,地址:北京市朝阳区建国路99 号，电子邮箱:wanglei789@test.net",
+                                                    "bbox": [
+                                                        56.0,
+                                                        564.0,
+                                                        1338.0,
+                                                        622.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            56.0,
+                                                            564.0
+                                                        ],
+                                                        [
+                                                            1338.0,
+                                                            564.0
+                                                        ],
+                                                        [
+                                                            1338.0,
+                                                            622.0
+                                                        ],
+                                                        [
+                                                            56.0,
+                                                            622.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9525325298309326,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "身份证号：110105198511034567",
+                                                    "bbox": [
+                                                        63.0,
+                                                        664.0,
+                                                        595.0,
+                                                        714.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            63.0,
+                                                            664.0
+                                                        ],
+                                                        [
+                                                            595.0,
+                                                            664.0
+                                                        ],
+                                                        [
+                                                            595.0,
+                                                            714.0
+                                                        ],
+                                                        [
+                                                            63.0,
+                                                            714.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9883930087089539,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "混淆数据:",
+                                                    "bbox": [
+                                                        55.0,
+                                                        776.0,
+                                                        230.0,
+                                                        834.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            55.0,
+                                                            776.0
+                                                        ],
+                                                        [
+                                                            230.0,
+                                                            776.0
+                                                        ],
+                                                        [
+                                                            230.0,
+                                                            834.0
+                                                        ],
+                                                        [
+                                                            55.0,
+                                                            834.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.903880774974823,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "姓名：张_三，地址：广东省－ 深圳市－南山区科技园路 88 号，邮箱:",
+                                                    "bbox": [
+                                                        55.0,
+                                                        888.0,
+                                                        1311.0,
+                                                        944.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            55.0,
+                                                            888.0
+                                                        ],
+                                                        [
+                                                            1311.0,
+                                                            888.0
+                                                        ],
+                                                        [
+                                                            1311.0,
+                                                            944.0
+                                                        ],
+                                                        [
+                                                            55.0,
+                                                            944.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9653171896934509,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "zhang#san123@test.com",
+                                                    "bbox": [
+                                                        61.0,
+                                                        988.0,
+                                                        485.0,
+                                                        1038.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            61.0,
+                                                            988.0
+                                                        ],
+                                                        [
+                                                            485.0,
+                                                            988.0
+                                                        ],
+                                                        [
+                                                            485.0,
+                                                            1038.0
+                                                        ],
+                                                        [
+                                                            61.0,
+                                                            1038.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9990062713623047,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "姓名：李O娜,地址：浙江省杭州市西湖区天目山路伍伍号，邮箱:lina456@test.",
+                                                    "bbox": [
+                                                        55.0,
+                                                        1094.0,
+                                                        1329.0,
+                                                        1150.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            55.0,
+                                                            1094.0
+                                                        ],
+                                                        [
+                                                            1329.0,
+                                                            1094.0
+                                                        ],
+                                                        [
+                                                            1329.0,
+                                                            1150.0
+                                                        ],
+                                                        [
+                                                            55.0,
+                                                            1150.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.978614091873169,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "cn (空格干扰)",
+                                                    "bbox": [
+                                                        54.0,
+                                                        1191.0,
+                                                        308.0,
+                                                        1248.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            54.0,
+                                                            1191.0
+                                                        ],
+                                                        [
+                                                            308.0,
+                                                            1191.0
+                                                        ],
+                                                        [
+                                                            308.0,
+                                                            1248.0
+                                                        ],
+                                                        [
+                                                            54.0,
+                                                            1248.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9797555208206177,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 2,
+                            "virtual_lines": [
+                                {
+                                    "bbox": [
+                                        103,
+                                        406,
+                                        776,
+                                        618.0
+                                    ],
+                                    "spans": [],
+                                    "index": 1
+                                },
+                                {
+                                    "bbox": [
+                                        103,
+                                        618.0,
+                                        776,
+                                        830.0
+                                    ],
+                                    "spans": [],
+                                    "index": 2
+                                },
+                                {
+                                    "bbox": [
+                                        103,
+                                        830.0,
+                                        776,
+                                        1042.0
+                                    ],
+                                    "spans": [],
+                                    "index": 3
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        135,
+                        1086,
+                        295,
+                        1114
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                129,
+                                1083,
+                                299,
+                                1118
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        129,
+                                        1083,
+                                        299,
+                                        1118
+                                    ],
+                                    "score": 1.0,
+                                    "content": "二、金融数据类",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        }
+                    ],
+                    "index": 4
+                }
+            ],
+            "page_idx": 1,
+            "page_size": [
+                892,
+                1261
+            ],
+            "discarded_blocks": [],
+            "para_blocks": [
+                {
+                    "type": "table",
+                    "bbox": [
+                        130,
+                        353,
+                        762,
+                        402
+                    ],
+                    "blocks": [
+                        {
+                            "type": "table_body",
+                            "bbox": [
+                                130,
+                                353,
+                                762,
+                                402
+                            ],
+                            "group_id": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        130,
+                                        353,
+                                        762,
+                                        402
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                130,
+                                                353,
+                                                762,
+                                                402
+                                            ],
+                                            "score": 0.155,
+                                            "html": "<html><body><table><tr><td>3.个人基础信息</td></tr></table></body></html>",
+                                            "type": "table",
+                                            "image_path": "83757c644309df15d2ee2329366ec9b7fd6ebaa335799da08f69fb1cedcdb64b.jpg",
+                                            "ocr_bbox": [
+                                                130,
+                                                353,
+                                                762,
+                                                402
+                                            ],
+                                            "table_bbox": [
+                                                130,
+                                                353,
+                                                762,
+                                                402
+                                            ],
+                                            "table_texts": [
+                                                {
+                                                    "text": "3.个人基础信息",
+                                                    "bbox": [
+                                                        3.0,
+                                                        17.0,
+                                                        321.0,
+                                                        88.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            3.0,
+                                                            17.0
+                                                        ],
+                                                        [
+                                                            321.0,
+                                                            17.0
+                                                        ],
+                                                        [
+                                                            321.0,
+                                                            88.0
+                                                        ],
+                                                        [
+                                                            3.0,
+                                                            88.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9971476197242737,
+                                                    "ocr_hw": [
+                                                        100,
+                                                        1283
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0,
+                            "virtual_lines": [
+                                {
+                                    "bbox": [
+                                        130,
+                                        353,
+                                        762,
+                                        402
+                                    ],
+                                    "spans": [],
+                                    "index": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0,
+                    "page_num": 1,
+                    "page_size": [
+                        892,
+                        1261
+                    ]
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        103,
+                        406,
+                        776,
+                        1042
+                    ],
+                    "blocks": [
+                        {
+                            "type": "table_body",
+                            "bbox": [
+                                103,
+                                406,
+                                776,
+                                1042
+                            ],
+                            "group_id": 1,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        103,
+                                        406,
+                                        776,
+                                        1042
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                103,
+                                                406,
+                                                776,
+                                                1042
+                                            ],
+                                            "score": 0.516,
+                                            "html": "<html><body><table><tr><td></td><td></td></tr><tr><td></td><td>原始数据（姓名+地址+证件关联）：</td></tr><tr><td></td><td>姓名：张三，地址：广东省深圳市南山区科技园路 88号，电子邮箱：</td></tr><tr><td></td><td></td></tr><tr><td></td><td>zhangsan123@test.c0m，身份证号：440305199508201234</td></tr><tr><td></td><td>姓名：李娜，地址：浙江省杭州市西湖区天目山路 55号，电子邮箱：</td></tr><tr><td></td><td>lina456@test.cn，身份证号：330106199005126789</td></tr><tr><td></td><td></td></tr><tr><td></td><td>姓名：王磊,地址:北京市朝阳区建国路99 号，电子邮箱:wanglei789@test.net</td></tr><tr><td></td><td>身份证号：110105198511034567</td></tr><tr><td></td><td></td></tr><tr><td></td><td>混淆数据:</td></tr><tr><td></td><td>姓名：张_三，地址：广东省－ 深圳市－南山区科技园路 88 号，邮箱:</td></tr><tr><td></td><td></td></tr><tr><td></td><td>zhang#san123@test.com</td></tr><tr><td></td><td></td></tr><tr><td></td><td>姓名：李O娜,地址：浙江省杭州市西湖区天目山路伍伍号，邮箱:lina456@test.</td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td>cn (空格干扰)</td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr></table></body></html>",
+                                            "type": "table",
+                                            "image_path": "75787128684d8af8ef1fe8c41518920d7cdd3f676611bdbf598030fd79c57e25.jpg",
+                                            "ocr_bbox": [
+                                                103,
+                                                406,
+                                                776,
+                                                1042
+                                            ],
+                                            "table_bbox": [
+                                                103,
+                                                406,
+                                                776,
+                                                1042
+                                            ],
+                                            "table_texts": [
+                                                {
+                                                    "text": "原始数据（姓名+地址+证件关联）：",
+                                                    "bbox": [
+                                                        61.0,
+                                                        39.0,
+                                                        719.0,
+                                                        86.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            61.0,
+                                                            39.0
+                                                        ],
+                                                        [
+                                                            719.0,
+                                                            39.0
+                                                        ],
+                                                        [
+                                                            719.0,
+                                                            86.0
+                                                        ],
+                                                        [
+                                                            61.0,
+                                                            86.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9788327813148499,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "姓名：张三，地址：广东省深圳市南山区科技园路 88号，电子邮箱：",
+                                                    "bbox": [
+                                                        53.0,
+                                                        147.0,
+                                                        1313.0,
+                                                        206.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            53.0,
+                                                            147.0
+                                                        ],
+                                                        [
+                                                            1313.0,
+                                                            147.0
+                                                        ],
+                                                        [
+                                                            1313.0,
+                                                            206.0
+                                                        ],
+                                                        [
+                                                            53.0,
+                                                            206.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9877396821975708,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "zhangsan123@test.c0m，身份证号：440305199508201234",
+                                                    "bbox": [
+                                                        58.0,
+                                                        249.0,
+                                                        1064.0,
+                                                        298.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            58.0,
+                                                            249.0
+                                                        ],
+                                                        [
+                                                            1064.0,
+                                                            249.0
+                                                        ],
+                                                        [
+                                                            1064.0,
+                                                            298.0
+                                                        ],
+                                                        [
+                                                            58.0,
+                                                            298.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.985237717628479,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "姓名：李娜，地址：浙江省杭州市西湖区天目山路 55号，电子邮箱：",
+                                                    "bbox": [
+                                                        57.0,
+                                                        360.0,
+                                                        1313.0,
+                                                        413.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            57.0,
+                                                            360.0
+                                                        ],
+                                                        [
+                                                            1313.0,
+                                                            360.0
+                                                        ],
+                                                        [
+                                                            1313.0,
+                                                            413.0
+                                                        ],
+                                                        [
+                                                            57.0,
+                                                            413.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9868979454040527,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "lina456@test.cn，身份证号：330106199005126789",
+                                                    "bbox": [
+                                                        63.0,
+                                                        456.0,
+                                                        926.0,
+                                                        507.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            63.0,
+                                                            456.0
+                                                        ],
+                                                        [
+                                                            926.0,
+                                                            456.0
+                                                        ],
+                                                        [
+                                                            926.0,
+                                                            507.0
+                                                        ],
+                                                        [
+                                                            63.0,
+                                                            507.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9875913858413696,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "姓名：王磊,地址:北京市朝阳区建国路99 号，电子邮箱:wanglei789@test.net",
+                                                    "bbox": [
+                                                        56.0,
+                                                        564.0,
+                                                        1338.0,
+                                                        622.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            56.0,
+                                                            564.0
+                                                        ],
+                                                        [
+                                                            1338.0,
+                                                            564.0
+                                                        ],
+                                                        [
+                                                            1338.0,
+                                                            622.0
+                                                        ],
+                                                        [
+                                                            56.0,
+                                                            622.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9525325298309326,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "身份证号：110105198511034567",
+                                                    "bbox": [
+                                                        63.0,
+                                                        664.0,
+                                                        595.0,
+                                                        714.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            63.0,
+                                                            664.0
+                                                        ],
+                                                        [
+                                                            595.0,
+                                                            664.0
+                                                        ],
+                                                        [
+                                                            595.0,
+                                                            714.0
+                                                        ],
+                                                        [
+                                                            63.0,
+                                                            714.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9883930087089539,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "混淆数据:",
+                                                    "bbox": [
+                                                        55.0,
+                                                        776.0,
+                                                        230.0,
+                                                        834.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            55.0,
+                                                            776.0
+                                                        ],
+                                                        [
+                                                            230.0,
+                                                            776.0
+                                                        ],
+                                                        [
+                                                            230.0,
+                                                            834.0
+                                                        ],
+                                                        [
+                                                            55.0,
+                                                            834.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.903880774974823,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "姓名：张_三，地址：广东省－ 深圳市－南山区科技园路 88 号，邮箱:",
+                                                    "bbox": [
+                                                        55.0,
+                                                        888.0,
+                                                        1311.0,
+                                                        944.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            55.0,
+                                                            888.0
+                                                        ],
+                                                        [
+                                                            1311.0,
+                                                            888.0
+                                                        ],
+                                                        [
+                                                            1311.0,
+                                                            944.0
+                                                        ],
+                                                        [
+                                                            55.0,
+                                                            944.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9653171896934509,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "zhang#san123@test.com",
+                                                    "bbox": [
+                                                        61.0,
+                                                        988.0,
+                                                        485.0,
+                                                        1038.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            61.0,
+                                                            988.0
+                                                        ],
+                                                        [
+                                                            485.0,
+                                                            988.0
+                                                        ],
+                                                        [
+                                                            485.0,
+                                                            1038.0
+                                                        ],
+                                                        [
+                                                            61.0,
+                                                            1038.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9990062713623047,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "姓名：李O娜,地址：浙江省杭州市西湖区天目山路伍伍号，邮箱:lina456@test.",
+                                                    "bbox": [
+                                                        55.0,
+                                                        1094.0,
+                                                        1329.0,
+                                                        1150.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            55.0,
+                                                            1094.0
+                                                        ],
+                                                        [
+                                                            1329.0,
+                                                            1094.0
+                                                        ],
+                                                        [
+                                                            1329.0,
+                                                            1150.0
+                                                        ],
+                                                        [
+                                                            55.0,
+                                                            1150.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.978614091873169,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                },
+                                                {
+                                                    "text": "cn (空格干扰)",
+                                                    "bbox": [
+                                                        54.0,
+                                                        1191.0,
+                                                        308.0,
+                                                        1248.0
+                                                    ],
+                                                    "polygon": [
+                                                        [
+                                                            54.0,
+                                                            1191.0
+                                                        ],
+                                                        [
+                                                            308.0,
+                                                            1191.0
+                                                        ],
+                                                        [
+                                                            308.0,
+                                                            1248.0
+                                                        ],
+                                                        [
+                                                            54.0,
+                                                            1248.0
+                                                        ]
+                                                    ],
+                                                    "confidence": 0.9797555208206177,
+                                                    "ocr_hw": [
+                                                        1290,
+                                                        1364
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 2,
+                            "virtual_lines": [
+                                {
+                                    "bbox": [
+                                        103,
+                                        406,
+                                        776,
+                                        618.0
+                                    ],
+                                    "spans": [],
+                                    "index": 1
+                                },
+                                {
+                                    "bbox": [
+                                        103,
+                                        618.0,
+                                        776,
+                                        830.0
+                                    ],
+                                    "spans": [],
+                                    "index": 2
+                                },
+                                {
+                                    "bbox": [
+                                        103,
+                                        830.0,
+                                        776,
+                                        1042.0
+                                    ],
+                                    "spans": [],
+                                    "index": 3
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2,
+                    "page_num": 1,
+                    "page_size": [
+                        892,
+                        1261
+                    ]
+                },
+                {
+                    "type": "title",
+                    "bbox": [
+                        135,
+                        1086,
+                        295,
+                        1114
+                    ],
+                    "lines": [
+                        {
+                            "bbox": [
+                                129,
+                                1083,
+                                299,
+                                1118
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        129,
+                                        1083,
+                                        299,
+                                        1118
+                                    ],
+                                    "score": 1.0,
+                                    "content": "二、金融数据类",
+                                    "type": "text"
+                                }
+                            ],
+                            "index": 4
+                        }
+                    ],
+                    "index": 4,
+                    "page_num": 1,
+                    "page_size": [
+                        892,
+                        1261
+                    ]
+                }
+            ]
+        }
+    ],
+    "_backend": "pipeline",
+    "_version_name": "0.0.0"
+}
