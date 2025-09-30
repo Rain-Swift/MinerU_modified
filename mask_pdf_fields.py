@@ -275,9 +275,9 @@ def mask_pdf_fields(pdf_path: str, json_path: str, strings: List[str],
 if __name__ == "__main__":
     # 示例1: 遮挡单个字符串
     results = mask_pdf_fields(
-        pdf_path="/home/czr/MinerU_2/mineru_in/广州五舟公司销售合同.pdf",
-        json_path="/home/czr/MinerU_2/mineru_out/广州五舟公司销售合同/auto/广州五舟公司销售合同_middle.json", 
-        strings=["020-66679500", "广州五舟信息技术有限公司", "黄允犬", "以下简称甲方", "6228653928-5226-4#8"],
+        pdf_path="/home/czr/MinerU_2/mineru_in/1.pdf",
+        json_path="/home/czr/MinerU_2/mineru_out/1/auto/1_middle.json", 
+        strings=["310@10119960223@24@1", "zhangy^ing5602@&163.c-0m"],
         output_path="masked.pdf"
     )
     

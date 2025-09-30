@@ -6,7 +6,7 @@
 """
 import re
 import json
-from typing import List, Dict, Tuple, Optional
+from typing import List, Dict, Tuple
 from loguru import logger
 
 
@@ -146,24 +146,7 @@ class PostCharBboxConverter:
         
         return char_bboxes
     
-    def normalize_text_for_matching(self, text: str) -> str:
-        """
-        标准化文本用于匹配，移除多余的空白字符和特殊字符
-        
-        Args:
-            text: 原始文本
-            
-        Returns:
-            标准化后的文本
-        """
-        # 将多个空白字符替换为单个空格，并去除首尾空白
-        normalized = re.sub(r'\s+', ' ', text.strip())
-        
-        # 移除或替换特殊字符，提高匹配成功率
-        # 保留中文、英文、数字和基本标点
-        normalized = re.sub(r'[^\w\u4e00-\u9fff\s，。！？；：""''（）【】]', '', normalized)
-        
-        return normalized
+    
     
     def find_line_in_markdown(self, line_text: str, md_str: str, search_start: int = 0) -> Tuple[int, int]:
         """
@@ -180,204 +163,27 @@ class PostCharBboxConverter:
         if not line_text.strip():
             return -1, -1
         
-        # 标准化文本用于匹配
-        normalized_text = self.normalize_text_for_matching(line_text)
-        
-        # 策略1: 直接匹配
-        found_index = md_str.find(normalized_text, search_start)
+        # 主策略：仅用原始行文本在 markdown 中直接查找（不做任何转换）
+        found_index = md_str.find(line_text, search_start)
         if found_index != -1:
-            end_index = found_index + len(normalized_text)
+            end_index = found_index + len(line_text)
             return found_index, end_index
-        
-        # 策略2: 尝试在markdown格式中查找（如标题）
-        # 查找可能的markdown格式：如 "# 文本" 或 "## 文本"
-        markdown_patterns = [
-            f"# {normalized_text}",
-            f"## {normalized_text}",
-            f"### {normalized_text}",
-            f"#### {normalized_text}",
-            f"**{normalized_text}**",
-            f"*{normalized_text}*",
-            f"`{normalized_text}`"
-        ]
-        
-        for pattern in markdown_patterns:
-            found_index = md_str.find(pattern, search_start)
-            if found_index != -1:
-                # 找到markdown格式，返回文本部分的位置
-                text_start = found_index + len(pattern) - len(normalized_text)
-                text_end = text_start + len(normalized_text)
-                return text_start, text_end
-        
-        # 策略3: 移除markdown格式字符后匹配
-        clean_text = self._remove_markdown_formatting(normalized_text)
-        if clean_text != normalized_text:
-            found_index = md_str.find(clean_text, search_start)
-            if found_index != -1:
-                end_index = found_index + len(clean_text)
-                return found_index, end_index
-        
-        # 策略4: 表格格式匹配
-        # 检查是否是表格行（包含多个用空格分隔的词语）
-        if ' ' in normalized_text and len(normalized_text.split()) >= 2:
-            # 尝试匹配markdown表格格式
-            words = normalized_text.split()
-            
-            # 策略4a: 匹配表格行格式 "| word1 | word2 | word3 |"
-            table_pattern = '| ' + ' | '.join(words) + ' |'
-            found_index = md_str.find(table_pattern, search_start)
-            if found_index != -1:
-                # 找到表格行，返回文本部分的位置（跳过markdown格式）
-                text_start = found_index + 2  # 跳过 "| "
-                text_end = text_start + len(normalized_text)
-                return text_start, text_end
-            
-            # 策略4b: 匹配表格行格式 "word1 | word2 | word3"
-            table_pattern2 = ' | '.join(words)
-            found_index = md_str.find(table_pattern2, search_start)
-            if found_index != -1:
-                text_start = found_index
-                text_end = text_start + len(normalized_text)
-                return text_start, text_end
-            
-            # 策略4c: 匹配表格行格式 "| word1 | word2 | word3 |" (完整格式)
-            table_pattern3 = '| ' + ' | '.join(words) + ' |'
-            found_index = md_str.find(table_pattern3, search_start)
-            if found_index != -1:
-                # 找到完整表格行，返回文本部分的位置
-                text_start = found_index + 2  # 跳过 "| "
-                text_end = text_start + len(normalized_text)
-                return text_start, text_end
-            
-            # 策略4d: 模糊匹配表格行（处理markdown中的额外空格）
-            # 在markdown中查找包含所有词语的行
-            for line in md_str[search_start:].split('\n'):
-                if all(word in line for word in words):
-                    # 找到包含所有词语的行
-                    line_start = md_str.find(line, search_start)
-                    if line_start != -1:
-                        # 在行中查找文本的位置
-                        text_in_line = ' '.join(words)
-                        text_start_in_line = line.find(text_in_line)
-                        if text_start_in_line != -1:
-                            text_start = line_start + text_start_in_line
-                            text_end = text_start + len(normalized_text)
-                            return text_start, text_end
-                        else:
-                            # 如果直接查找失败，尝试查找第一个词语的位置
-                            first_word = words[0]
-                            first_word_pos = line.find(first_word)
-                            if first_word_pos != -1:
-                                text_start = line_start + first_word_pos
-                                text_end = text_start + len(normalized_text)
-                                return text_start, text_end
-        
-        # 策略5: HTML表格匹配
-        # 检查markdown中是否包含HTML表格
-        html_table_pattern = r'<html><body><table>.*?</table></body></html>'
-        html_tables = re.findall(html_table_pattern, md_str[search_start:], re.DOTALL)
-        
-        for html_table in html_tables:
-            # 从HTML中提取纯文本
-            html_text = self._extract_text_from_html_table(html_table)
-            if normalized_text in html_text:
-                # 在HTML中找到文本，计算在markdown中的位置
-                html_start = md_str.find(html_table, search_start)
-                text_start_in_html = html_text.find(normalized_text)
-                if html_start != -1 and text_start_in_html != -1:
-                    # 简化处理：假设文本在HTML的开始位置
-                    text_start = html_start + text_start_in_html
-                    text_end = text_start + len(normalized_text)
-                    return text_start, text_end
-        
-        # 策略6: 模糊匹配（处理可能的字符差异）
-        # 移除所有空白字符后匹配
-        clean_normalized = re.sub(r'\s+', '', normalized_text)
-        clean_md = re.sub(r'\s+', '', md_str[search_start:])
-        if clean_normalized in clean_md:
-            # 找到模糊匹配，需要计算在原始字符串中的位置
-            fuzzy_index = clean_md.find(clean_normalized)
-            if fuzzy_index != -1:
-                # 计算在原始markdown中的位置（简化处理）
-                original_index = search_start + fuzzy_index
-                end_index = original_index + len(normalized_text)
-                
-                # 验证匹配质量
-                if end_index <= len(md_str):
-                    matched_text = md_str[original_index:end_index]
-                    # 如果匹配的文本长度差异太大，可能是错误匹配
-                    if abs(len(matched_text) - len(normalized_text)) <= max(5, len(normalized_text) * 0.3):
-                        return original_index, end_index
-        
-        # 策略7: 更宽松的模糊匹配（移除更多特殊字符）
-        # 只保留中文、英文、数字进行匹配
-        ultra_clean_normalized = re.sub(r'[^\w\u4e00-\u9fff]', '', normalized_text)
-        ultra_clean_md = re.sub(r'[^\w\u4e00-\u9fff]', '', md_str[search_start:])
-        if ultra_clean_normalized and ultra_clean_normalized in ultra_clean_md:
-            # 找到超宽松匹配，但需要验证匹配质量
-            fuzzy_index = ultra_clean_md.find(ultra_clean_normalized)
-            if fuzzy_index != -1:
-                # 计算在原始markdown中的位置（简化处理）
-                original_index = search_start + fuzzy_index
-                end_index = original_index + len(normalized_text)
-                
-                # 验证匹配质量：检查匹配的文本是否合理
-                if end_index <= len(md_str):
-                    matched_text = md_str[original_index:end_index]
-                    # 如果匹配的文本长度差异太大，可能是错误匹配
-                    if abs(len(matched_text) - len(normalized_text)) <= max(5, len(normalized_text) * 0.3):
-                        return original_index, end_index
-        
+
+        # 备用策略：从右开始缩短前缀，直到匹配成功
+        # 命中后返回 [命中起点, 命中起点 + 原始整行长度)
+        min_sub_len = 5
+        text_len = len(line_text)
+        for cut in range(text_len - 1, min_sub_len - 1, -1):
+            prefix = line_text[:cut]
+            if not prefix.strip():
+                continue
+            pos = md_str.find(prefix, search_start)
+            if pos != -1:
+                return pos, pos + text_len
+
         return -1, -1
     
-    def _remove_markdown_formatting(self, text: str) -> str:
-        """
-        移除markdown格式化字符，保留纯文本内容
-        
-        Args:
-            text: 包含markdown格式的文本
-        
-        Returns:
-            移除格式化字符后的纯文本
-        """
-        # 移除markdown格式化字符的正则表达式
-        # 标题标记 #
-        text = re.sub(r'^#+\s*', '', text, flags=re.MULTILINE)
-        
-        # 粗体和斜体标记 **text** *text*
-        text = re.sub(r'\*+([^*]+)\*+', r'\1', text)
-        
-        # 链接 [text](url) 
-        text = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', text)
-        
-        # 图片 ![alt](url)
-        text = re.sub(r'!\[([^\]]*)\]\([^)]+\)', r'\1', text)
-        
-        # 代码块标记 ```
-        text = re.sub(r'```[^`]*```', '', text, flags=re.DOTALL)
-        
-        # 行内代码 `code`
-        text = re.sub(r'`([^`]+)`', r'\1', text)
-        
-        # 列表标记 - * +
-        text = re.sub(r'^[\s]*[-*+]\s+', '', text, flags=re.MULTILINE)
-        
-        # 有序列表标记 1. 2.
-        text = re.sub(r'^\s*\d+\.\s+', '', text, flags=re.MULTILINE)
-        
-        # 引用标记 >
-        text = re.sub(r'^>\s*', '', text, flags=re.MULTILINE)
-        
-        # 水平线 --- ***
-        text = re.sub(r'^[-*_]{3,}$', '', text, flags=re.MULTILINE)
-        
-        # 表格分隔符 |
-        text = re.sub(r'\|', '', text)
-        
-        # 移除多余的空白字符
-        text = re.sub(r'\s+', ' ', text.strip())
-        
-        return text
+    
     
     def convert_line_to_chars(self, line_text: str, line_bbox: List[float], 
                              md_start_index: int, page_index: int) -> List[Dict]:
@@ -413,23 +219,7 @@ class PostCharBboxConverter:
         
         return char_data
     
-    def _extract_text_from_html_table(self, html_table: str) -> str:
-        """
-        从HTML表格中提取纯文本内容
-        
-        Args:
-            html_table: HTML表格字符串
-        
-        Returns:
-            提取的纯文本内容
-        """
-        # 移除HTML标签，保留文本内容
-        text = re.sub(r'<[^>]+>', '', html_table)
-        
-        # 清理多余的空白字符
-        text = re.sub(r'\s+', ' ', text.strip())
-        
-        return text
+    
     
     def extract_lines_from_middle_json(self, middle_json: Dict) -> List[Dict]:
         """
